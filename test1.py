@@ -3,7 +3,8 @@ import mysql.connector
 config = {
     "user": "root",
     "password": "maria7",
-    "host": "127.0.0.1", #local
+    # "host": "127.0.0.1", #local
+    "host": "172.17.0.3", #docker(mariadb) ip :: docker inspect 04a71d1e2ef3
     "database": "TEST", #Database name
     "port": "3306" #port는 최초 설치 시 입력한 값(기본값은 3306)
 }
